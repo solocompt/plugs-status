@@ -48,9 +48,9 @@ setup(
     version=version,
     description="""API Status endpoint""",
     long_description=readme + '\n\n' + history,
-    author='Ricardo Lobo',
-    author_email='ricardolobo@solo.com.pt',
-    url='https://github.com/ricardolobo/plugs-status',
+    author='Solo',
+    author_email='geral@solo.com.pt',
+    url='https://github.com/solocompt/plugs-status',
     packages=[
         'plugs_status',
     ],
@@ -61,15 +61,10 @@ setup(
     keywords='plugs-status',
     classifiers=[
         'Development Status :: 3 - Alpha',
-        'Framework :: Django',
-        'Framework :: Django :: 1.9',
+        'Framework :: Django :: 1.11',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3'
     ],
 )
