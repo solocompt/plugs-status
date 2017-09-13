@@ -1,3 +1,5 @@
+from psycopg2 import OperationalError
+
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.response import Response
 from rest_framework import permissions
@@ -10,7 +12,8 @@ def api_status(request):
     """
     API is running
     """
-    if utils.check_connection():
+    try:
+        utils.check_connection()
         return Response(data={'status': 'running'})
-    else:
+    except OperationalError:
         return Response(data={'status': 'not running'})
